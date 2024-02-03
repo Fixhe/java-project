@@ -7,6 +7,7 @@ public class main {
         Scanner input=new Scanner(System.in);
         int n=0,op1,op2;
         String st1,st2;
+        // this is ravin
         boolean exit=false;
         bookingmanagement b1=new bookingmanagement();//for manu
         b1.loginSystem();
@@ -93,46 +94,5 @@ public class main {
            st2=input.next();
        }while(!st2.equals("exit"));
     }
-    //function edit
-//    public static void  Update(bookingmanagement[] bookings, int n) {
-//        Scanner in = new Scanner(System.in);
-//        System.out.print("Input Room ID to edit:");
-//        String e_roomid = in.next();
-//        String uproom_id;
-//         String upcustomer_id;
-//         String upcustomer_name;
-//         String upcustomer_gender;
-//         int uproom_number;
-//         String uproom_date;
-//         int b=0;
-//        for (int i = 0; i < n; i++) {
-//            if (bookings[i].getRoom_id().equals(e_roomid)) {
-//                b=1;
-//                System.out.print("Input New Room_ID        :");
-//                uproom_id=in.next();
-//                System.out.print("Input New Customer_ID    :");
-//                upcustomer_id=in.next();
-//                System.out.print("Input New Customer_Name  :");
-//                upcustomer_name=in.next();
-//                System.out.print("Input New Customer_Gender:");
-//                upcustomer_gender=in.next();
-//                System.out.print("Input New Room_Number    :");
-//                uproom_number=in.nextInt();
-//                System.out.print("Input New Room_Date      :");
-//                uproom_date=in.next();
-//
-//                bookings[i].setRoom_id(uproom_id);
-//                bookings[i].setCustomer_id(upcustomer_id);
-//                bookings[i].setCustomer_name(upcustomer_name);
-//                bookings[i].setCustomer_gender(upcustomer_gender);
-//                bookings[i].setRoom_number(uproom_number);
-//                bookings[i].setRoom_date(uproom_date);
-//                System.clearProperty(String.valueOf(b));
-//
-//            }
-//        }if(b==0){
-//            System.out.println("invalid room id");
-//        }
-//    }
 }
 
