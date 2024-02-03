@@ -7,6 +7,7 @@ public class main {
         Scanner input=new Scanner(System.in);
         int n=0,op1,op2;
         String st1,st2;
+        // already changeg
         // change to Main Test
         //sdjsd
         boolean exit=false;
