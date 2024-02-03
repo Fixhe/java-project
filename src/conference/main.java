@@ -8,9 +8,10 @@ public class main {
         int n=0,op1,op2;
         String st1,st2;
         // change to Main Test
+        //sdjsd
         boolean exit=false;
         bookingmanagement b1=new bookingmanagement();//for manu
-        b1.loginSystem();
+        //b1.loginSystem();
         bookingmanagement[] bookings=new bookingmanagement[100000];
         //
        do{
