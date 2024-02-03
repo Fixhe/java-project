@@ -7,7 +7,7 @@ public class main {
         Scanner input=new Scanner(System.in);
         int n=0,op1,op2;
         String st1,st2;
-        // its Ravin
+        // change to Main Test
         boolean exit=false;
         bookingmanagement b1=new bookingmanagement();//for manu
         b1.loginSystem();
