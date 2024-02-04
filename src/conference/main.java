@@ -7,28 +7,22 @@ public class main {
         Scanner input=new Scanner(System.in);
         int n=0,op1,op2;
         String st1,st2;
-        // already changeg
-        // change to Main Test
-
         boolean exit=false;
         bookingmanagement b1=new bookingmanagement();//for manu
         b1.loginSystem();
         bookingmanagement[] bookings=new bookingmanagement[100000];
-        //
        do{
            b1.manu1();
-           System.out.print("which one do you want choose:");
+           System.out.print("Choose your main function : ");
            op1=input.nextInt();
            switch (op1){
-               //Booking Management;
                case 1:{
-                   do{
                        b1.manubookingmanagement();
                        System.out.print("Pls Choose One:");
                        op2=input.nextInt();
                        switch(op2){
-                           //add booking information;
                            case 1:{
+                               System.out.println("==========Input Information===========");
                                System.out.print("Input N:");
                                n=input.nextInt();
                                int i;
@@ -36,29 +30,25 @@ public class main {
                                    bookings[i]=new bookingmanagement();
                                    bookings[i].input();
                                }
-                               System.out.print("Enter [any key] To Continues...");
                            }break;
-                           //edit booking information;
                            case 2:{
+                               System.out.println("==========Edit Information===========");
                                bookingmanagement b = new bookingmanagement();
                                b.Update(bookings, n);
-//                                   Update(bookings,n);
-                               System.out.print("Enter [any key] To Continues...");
+                               //Update(bookings,n);
                            }break;
-                           //listing of booking type;
                            case 3:{
-
-                               System.out.print("Enter [any key] To Continues...");
+                               System.out.println("==========Listing Booking Type===========");
+                               bookingmanagement b = new bookingmanagement();
+                               b.bookingTypeVip(bookings,n);
+                               System.out.println(" ");
+                               b.bookingTypeMini(bookings,n);
                            }break;
-                           //deleting the booking type;
                            case 4:{
 
-                               System.out.print("Enter [any key] To Continues...");
+                               System.out.print("==========Deleting of Booking Type===========");
                            }break;
-                           case 5:{
-                               System.out.print("Enter [any key] To Continues...");
 
-                           }break;
                            case 0 :{
                                System.out.println("Typing exit:");
 
@@ -67,17 +57,15 @@ public class main {
                                System.out.println("Invalid choice...");
                            }
                        }
-                       st1=input.next();
-                   }while(!st1.equals("exit") );
+
                }break;
-               //Room Management;
                case 2:{
 
                }break;
                //Report of all Booking;
                case 3:{
                    System.out.printf("|--------------------------------------------------------------------------------------------|%n");
-                   System.out.printf("|%-10s|%-20s|%-15s|%-15s|%-12s|%-15s|%n","Room_ID","Customer_ID","Customer_Name","Customer_Gender","Room_Number","Room_Date");
+                   System.out.printf("|%-10s|%-20s|%-15s|%-15s|%n","Telephone","CustomerName","RoomType","BookingDate");
                    System.out.printf("|____________________________________________________________________________________________|%n");
                     for (int i=0;i<n;i++){
                         bookings[i].output();
@@ -95,6 +83,7 @@ public class main {
            System.out.print("press [any key] to continues:");
            st2=input.next();
        }while(!st2.equals("exit"));
+       System.out.println("Thank for using our service!");
     }
 }
 
