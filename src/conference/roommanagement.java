@@ -1,4 +1,4 @@
 package conference;
 
-public class roommanagement extends bookingmanagement {
+public class roommanagement {
 }
